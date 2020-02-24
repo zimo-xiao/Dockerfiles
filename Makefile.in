@@ -24,7 +24,7 @@ ifndef TAG
 endif
 
 ifndef REPO
-	REPO :=
+	REPO := "zimoxiao/hadoop"
 endif
 
 # cassandra-dev     -> cassandra

@@ -11,7 +11,7 @@
 #  https://www.linkedin.com/in/harisekhon
 #
 
-REPO := harisekhon/hadoop
+REPO := zimoxiao/hadoop
 
 include ../Makefile.in
 

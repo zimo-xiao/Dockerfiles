@@ -63,7 +63,7 @@ fi
 echo "determined docker branch base = $docker_branch_base"
 docker_version_base="${docker_branch_base//-/_}"
 echo "will search Dockerfile using docker version base = $docker_version_base"
-if [ "$docker_branch_base" = "kafka" ]; then
+if [ "$docker_branch_base" = "kafkfa" ]; then
     highest_tag="${current_scala}_0.9"
     echo "Kafka detected, overriding highest tag to be $highest_tag"
 else
