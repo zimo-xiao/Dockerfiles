@@ -65,7 +65,9 @@ RUN set -eux && \
     groupadd hadoop && \
     useradd -g hadoop hdfs && \
     useradd -g hadoop yarn && \
+    mkdir /dfs/data && \
     chown -R hdfs:hadoop /dfs/name && \
+    chown -R hdfs:hadoop /dfs/data && \
     chgrp -R hadoop /hadoop/logs && \
     chmod -R 0770 /hadoop/logs && \
     mkdir -p /root/.ssh \
@@ -88,3 +90,5 @@ ENV YARN_NODEMANAGER_USER=yarn
 EXPOSE 8020 8042 8088 9000 9868 9870 10020 19888 50010 50020 50090
 
 CMD ["/entrypoint.sh"]
+
+RUN rm -f /run/nologin
